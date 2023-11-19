@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +12,167 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+*{
+box-sizing: border-box;
+}
+
+.gallery-view-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sayac-view-container{
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #E2E2E2;
+}
+
+.sayac-view{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.sayac-view span{
+  color: #5F5F5F;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.time{
+
+}
+
+.time .big{
+  color: #5F5F5F;
+text-align: center;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.time .normal{
+  color: #A4A4A4;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.title{
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.desc{
+  color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+a{
+  color: unset;
+}
+
+.sayacs{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sayac{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 24px;
+  width: 400px;
+  height: 84px;
+  border: 4px solid;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.yks{
+  border: 4px solid #ff4f00;
+  color: #ff4f00;
+}
+
+.lgs{
+  border: 4px solid #DC0D15;
+  color: #DC0D15;
+}
+
+.sayac:hover{
+  opacity: 65%;
+  transition: all 0.1s;
+}
+
+.sayac-name{
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sayac-date{
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.back-button{
+  position: fixed;
+  bottom: 24px; 
+  color: #A4A4A4;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+@media screen and (max-width: 800px) {
+  .sayac{
+    width: 96vw;
+  }
 }

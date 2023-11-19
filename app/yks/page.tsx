@@ -1,5 +1,6 @@
 "use client";
 
+import { Inter } from 'next/font/google'
 import React, { useRef, useEffect, useState } from 'react';
 
 export default function Home() {

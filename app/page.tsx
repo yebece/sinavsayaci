@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="gallery-view-container">
       <span className='title'>Sınav Sayacı</span>
-      <span className='desc'>made with 🤍 and sınav hırsı by <a href="#">yusuf berk çekiç</a></span>
+      <span className='desc'>made with 🤍 and sınav hırsı by <a href="https://www.linkedin.com/in/yusuf-berk-çekiç-2a49711b5">yusuf berk çekiç</a></span>
       <div className='sayacs'>
         <a href="/yks" className='sayac yks'>
           <span className='sayac-name'>YKS</span>

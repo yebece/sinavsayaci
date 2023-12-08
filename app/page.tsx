@@ -16,6 +16,10 @@ export default function Home() {
           <span className='sayac-name'>LGS</span>
           <span className='sayac-date'>2 Haziran 2024</span>
         </a>
+        <a href="/msu" className='sayac yks'>
+          <span className='sayac-name'>MSÜ</span>
+          <span className='sayac-date'>3 Mart 2024</span>
+        </a>
       </div>
     </main>
   )

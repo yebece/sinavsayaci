@@ -249,6 +249,6 @@ line-height: normal;
 
 @media screen and (max-width: 800px) {
   .sayac, .footer{
-    width: 96vw;
+    width: 90vw;
   }
 }

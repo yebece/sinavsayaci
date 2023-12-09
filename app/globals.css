@@ -132,12 +132,26 @@ line-height: normal;
 }
 
 .title{
-  color: #000;
+  color: rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
   font-family: Inter;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 20px;
+}
+
+.background-shadow{
+  width: 100%;
+  height: 100px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999999999;
+
+  background: linear-gradient(180deg, #E2E2E2 0%, rgba(226, 226, 226, 0.00) 100%);
 }
 
 .desc{
@@ -158,7 +172,7 @@ a{
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .sayac{
@@ -166,41 +180,46 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-radius: 24px;
+  border-radius: 14px;
+  background: #E2E2E2;
   width: 400px;
-  height: 84px;
-  border: 4px solid;
-  padding: 16px;
+  height: 64px;
+  padding: 12px;
   text-decoration: none;
   transition: all 0.1s;
-}
-
-.yks{
-  border: 4px solid #ff4f00;
-  color: #ff4f00;
-}
-
-.lgs{
-  border: 4px solid #DC0D15;
-  color: #DC0D15;
+  transform: translateY(0px);
+  box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.05) inset, 0px 2px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
 }
 
 .sayac:hover{
-  opacity: 65%;
-  transition: all 0.1s;
+  transform: translateY(2px);
+  background: #ECECEC;
+  box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.05) inset, 0px 2px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
 }
 
 .sayac-name{
+  color: #5F5F5F;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
 .sayac-date{
+  color: #A4A4A4;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.highlight{
+  color: #5F5F5F;
+  font-family: Inter;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -219,8 +238,16 @@ font-weight: 700;
 line-height: normal;
 }
 
+.footer{ 
+  width: 400px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 16px;
+}
+
 @media screen and (max-width: 800px) {
-  .sayac{
+  .sayac, .footer{
     width: 96vw;
   }
 }

@@ -50,6 +50,7 @@ export default function Home() {
     <main className="sayac-view-container">
     <Snowfall 
 // Controls the number of snowflakes that are created (defaults to 150).
+  color='#fff'
 snowflakeCount={200}/>
         <div className='sayac-view'>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

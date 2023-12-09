@@ -1,5 +1,7 @@
 "use client";
 
+import Snowfall from 'react-snowfall'
+
 import { Inter } from 'next/font/google'
 import React, { useRef, useEffect, useState } from 'react';
 
@@ -46,6 +48,9 @@ export default function Home() {
 
   return (
     <main className="sayac-view-container">
+    <Snowfall 
+// Controls the number of snowflakes that are created (defaults to 150).
+snowflakeCount={200}/>
         <div className='sayac-view'>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M24 12C24 14.3734 23.2962 16.6934 21.9776 18.6668C20.6591 20.6402 18.7849 22.1783 16.5922 23.0865C14.3995 23.9948 11.9867 24.2324 9.65892 23.7694C7.33115 23.3064 5.19295 22.1635 3.51472 20.4853C1.83649 18.807 0.693605 16.6689 0.230582 14.3411C-0.232441 12.0133 0.00519939 9.60051 0.913451 7.4078C1.8217 5.21508 3.35977 3.34094 5.33316 2.02236C7.30655 0.703788 9.62663 -2.83022e-08 12 0V12H24Z" fill="#5F5F5F"/>

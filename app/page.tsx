@@ -1,10 +1,18 @@
+"use client";
+
 import Image from 'next/image'
 
+import Snowfall from 'react-snowfall'
+
+import SnowfallComponent from './SnowFallComponent.js';
 import { Inter } from 'next/font/google'
 
 export default function Home() {
   return (
     <main className="gallery-view-container">
+    <Snowfall 
+// Controls the number of snowflakes that are created (defaults to 150).
+snowflakeCount={200}/>
       <span className='title'>Sınav Sayacı</span>
       <div className='sayacs'>
         <a href="/yks" className='sayac'>

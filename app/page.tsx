@@ -23,9 +23,9 @@ snowflakeCount={200}/>
           <span className='sayac-date'><span className='highlight'>2</span> Haziran 2024</span>
           <span className='sayac-name'>LGS</span>
         </a>
-        <a href="/msu" className='sayac'>
+        <a className='sayac-over'>
           <span className='sayac-date'><span className='highlight'>3</span> Mart 2024</span>
-          <span className='sayac-name'>MSÜ</span>
+          <span className='sayac-name'>MSÜ - Bitti</span>
         </a>
       </div>
       <div className='footer'>

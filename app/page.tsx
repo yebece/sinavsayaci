@@ -15,9 +15,9 @@ export default function Home() {
 snowflakeCount={200}/>
       <span className='title'>Sınav Sayacı</span>
       <div className='sayacs'>
-        <a href="/yks" className='sayac'>
-          <span className='sayac-date'><span className='highlight'>8</span> Haziran 2024</span>
-          <span className='sayac-name'>TYT</span>
+        <a href="/yks25" className='sayac'>
+          <span className='sayac-date'><span className='highlight'>21</span> Haziran 2025</span>
+          <span className='sayac-name'>YKS 2025</span>
         </a>
         <a href="/ayt" className='sayac'>
           <span className='sayac-date'><span className='highlight'>9</span> Haziran 2024</span>
@@ -27,9 +27,9 @@ snowflakeCount={200}/>
           <span className='sayac-date'><span className='highlight'>9</span> Haziran 2024</span>
           <span className='sayac-name'>YDT</span>
         </a>
-        <a href="/yks25" className='sayac'>
-          <span className='sayac-date'><span className='highlight'>21</span> Haziran 2025</span>
-          <span className='sayac-name'>YKS 2025</span>
+        <a className='sayac-over'>
+          <span className='sayac-date'><span className='highlight'>8</span> Haziran 2024</span>
+          <span className='sayac-name'>TYT - Bitti, geçmiş olsun.</span>
         </a>
         <a className='sayac-over'>
           <span className='sayac-date'><span className='highlight'>2</span> Haziran 2024</span>
